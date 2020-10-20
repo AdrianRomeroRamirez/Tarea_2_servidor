@@ -1,0 +1,139 @@
+@import "https://fonts.googleapis.com/css?family=Ubuntu:400,700italic";
+@import "https://fonts.googleapis.com/css?family=Cabin:400";
+* {
+    box-sizing: border-box; }
+
+html {
+    background: #000;
+    background-size: cover;
+    font-size: 10px;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    text-align: center;
+    width: 100%; }
+
+p {
+    font-family: 'Ubuntu', sans-serif;
+    color: blue;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+    top: 50px; }
+
+/* =========================================
+Stark Industries Logo
+========================================= */
+#logo {
+    animation: logo-entry 2s ease-in;
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 40; }
+#logoMini {
+    animation: logo-entry 2s ease-in;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 40; }
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #00a4a2;
+    font-size: 48px;
+    font-size: 4.8rem;
+    font-weight: bold;
+    position: absolute;
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+    top: 50px; }
+h1:before {
+    border-left: 535px solid transparent;
+    border-bottom: 10px solid #00a4a2;
+    content: ' ';
+    height: 0;
+    position: absolute;
+    right: -74px;
+    top: -10px;
+    width: 0; }
+h1:after {
+    border-left: 100px solid transparent;
+    border-top: 16px solid #00a4a2;
+    content: ' ';
+    height: 0;
+    position: absolute;
+    right: -85px;
+    top: 24px;
+    transform: rotate(-47deg);
+    width: 0; }
+h2 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #b40505;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #000, 0 0 20px #000, 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000;
+    top: 50px; }
+
+th{
+    font-family: 'Ubuntu', sans-serif;
+    color: #ffde01;
+    font-size: 20px;
+}
+
+/* =========================================
+Log in form
+========================================= */
+#fade-box {
+    z-index: 4; }
+
+.stark-login form {
+    background: #111;
+    background: linear-gradient(#004746, #111111);
+    border: 6px solid #00a4a2;
+    box-shadow: 0 0 15px #00fffd;
+    border-radius: 5px;
+    display: inline-block;
+    height: 420px;
+    margin: 200px auto 0;
+    position: relative;
+    z-index: 4;
+    width: 500px;
+    transition: 1s all; }
+.stark-login form:hover {
+    border: 6px solid #00fffd;
+    box-shadow: 0 0 25px #00fffd;
+    transition: 1s all; }
+
+a {
+    text-decoration: none;
+    background: #222;
+    background: linear-gradient(#333333, #222222);
+    box-sizing: content-box;
+    border: 1px solid #444;
+    border-left-color: #000;
+    border-radius: 5px;
+    box-shadow: 0 2px 0 #000;
+    color: #fff;
+    display: block;
+    font-family: 'Cabin', helvetica, arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px auto;
+    padding: 0;
+    position: relative;
+    text-shadow: 0 -1px 0 #000;
+    width: 400px;
+    transition: 1s all; }
+a:hover,
+a:focus {
+    background: #0C6125;
+    background: linear-gradient(#393939, #292929);
+    color: #00fffc;
+    outline: none;
+    transition: 1s all; }
+a:active {
+    background: #292929;
+    background: linear-gradient(#393939, #292929);
+    box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+    top: 1px; }
